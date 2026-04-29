@@ -19,6 +19,7 @@ export type Translations = {
   contactHelper: LocalizedString;
   footerText: LocalizedString;
   piece: LocalizedString;
+  requestMessage: LocalizedString;
 };
 
 export const translations: Translations = {
@@ -91,5 +92,10 @@ export const translations: Translations = {
     en: "piece",
     lv: "gab",
     ru: "шт"
+  },
+  requestMessage: {
+    en: "We are always working on finding useful and interesting products for you. If you have any product requests or suggestions, feel free to contact us — we would be happy to hear from you.",
+    lv: "Mēs nepārtraukti strādājam, lai atrastu Jums noderīgus un interesantus produktus. Ja Jums ir kādi produktu pieprasījumi vai ieteikumi, droši sazinieties ar mums — mēs labprāt Jūs uzklausīsim.",
+    ru: "Мы постоянно работаем над тем, чтобы находить для вас полезные и интересные товары. Если у вас есть пожелания или предложения по продуктам, свяжитесь с нами — мы будем рады вас услышать."
   }
 };
