@@ -1,0 +1,89 @@
+export type LocalizedString = {
+  en: string;
+  lv: string;
+  ru: string;
+};
+
+export type Translations = {
+  headerSubtitle: LocalizedString;
+  navProducts: LocalizedString;
+  navContact: LocalizedString;
+  heroTitle: LocalizedString;
+  heroSubtitle: LocalizedString;
+  heroBtn: LocalizedString;
+  samplePrice: LocalizedString;
+  wholesale5to10: LocalizedString;
+  wholesale10plus: LocalizedString;
+  contactBtn: LocalizedString;
+  contactHelper: LocalizedString;
+  footerText: LocalizedString;
+  piece: LocalizedString;
+};
+
+export const translations: Translations = {
+  headerSubtitle: {
+    en: "Wholesale product catalog",
+    lv: "Vairumtirdzniecības produktu katalogs",
+    ru: "Оптовый каталог товаров"
+  },
+  navProducts: {
+    en: "Products",
+    lv: "Produkti",
+    ru: "Товары"
+  },
+  navContact: {
+    en: "Contact",
+    lv: "Kontakti",
+    ru: "Контакты"
+  },
+  heroTitle: {
+    en: "Catalog",
+    lv: "Katalogs",
+    ru: "Каталог"
+  },
+  heroSubtitle: {
+    en: "Browse our available products, sample prices and wholesale offers.",
+    lv: "Apskatiet pieejamos produktus, paraugu cenas un vairumtirdzniecības piedāvājumus.",
+    ru: "Ознакомьтесь с доступными товарами, ценами на образцы и оптовыми предложениями."
+  },
+  heroBtn: {
+    en: "View Products",
+    lv: "Skatīt Produktus",
+    ru: "Смотреть товары"
+  },
+  samplePrice: {
+    en: "Sample price",
+    lv: "Parauga cena",
+    ru: "Цена образца"
+  },
+  wholesale5to10: {
+    en: "Wholesale 5–10 pcs",
+    lv: "Vairumā 5–10 gab",
+    ru: "Оптом 5–10 шт"
+  },
+  wholesale10plus: {
+    en: "Wholesale 10+ pcs",
+    lv: "Vairumā 10+ gab",
+    ru: "Оптом 10+ шт"
+  },
+  contactBtn: {
+    en: "Contact to Order",
+    lv: "Sazināties, lai pasūtītu",
+    ru: "Связаться для заказа"
+  },
+  contactHelper: {
+    en: "For orders and wholesale inquiries, please contact us.",
+    lv: "Pasūtījumiem un vairumtirdzniecības jautājumiem lūdzam sazināties ar mums.",
+    ru: "Для заказов и оптовых запросов, пожалуйста, свяжитесь с нами."
+  },
+  footerText: {
+    en: "All rights reserved.",
+    lv: "Visas tiesības aizsargātas.",
+    ru: "Все права защищены."
+  },
+  piece: {
+    en: "piece",
+    lv: "gab",
+    ru: "шт"
+  }
+};

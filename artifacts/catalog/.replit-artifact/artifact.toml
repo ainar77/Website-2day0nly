@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "2DAYONLY Catalog"
+version = "1.0.0"
+id = "artifacts/catalog"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 21017
+
+[services.development]
+run = "pnpm --filter @workspace/catalog run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/catalog", "run", "build" ]
+publicDir = "artifacts/catalog/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "21017"
+BASE_PATH = "/"

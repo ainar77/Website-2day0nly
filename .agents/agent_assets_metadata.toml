@@ -1,0 +1,38 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "GqMljxZGhQDqjCtY8WPOC"
+uri = "file://artifacts/catalog/public/images/product-clippers.png"
+type = "image"
+title = "Minimalist hair clippers on white"
+
+[[generated]]
+id = "wlXqhi9KuO4HEua097PZ9"
+uri = "file://artifacts/catalog/public/images/product-scissors.png"
+type = "image"
+title = "Minimalist barber scissors on white"
+
+[[generated]]
+id = "fpudDcyaTAvqKxFDycX-6"
+uri = "file://artifacts/catalog/public/images/product-pomade.png"
+type = "image"
+title = "Minimalist styling pomade jar on white"
+
+[[generated]]
+id = "2tbXfjlSahu0FHAOf8I1E"
+uri = "file://artifacts/catalog/public/images/product-brush.png"
+type = "image"
+title = "Minimalist shaving brush on white"
+
+[[generated]]
+id = "jiQ1cPTfOfx55bq5z-roC"
+uri = "file://artifacts/catalog/public/images/product-towels.png"
+type = "image"
+title = "Minimalist salon towels stacked on white"
+
+[[generated]]
+id = "ndaEnkS3mnqnOX8wOQBQv"
+uri = "file://artifacts/catalog/public/images/product-cape.png"
+type = "image"
+title = "Minimalist barber cape on white"
