@@ -10,6 +10,7 @@ export type Product = {
   samplePrice: number;
   wholesale5to10: number;
   wholesale10plus: number;
+  unit?: LocalizedString;
 };
 
 /*
@@ -23,20 +24,25 @@ export const products: Product[] = [
   {
     id: "prod-1",
     mediaType: "image",
-    mediaUrl: "/images/product-clippers.png",
+    mediaUrl: "/images/product-face-shields.png",
     name: {
-      en: "Pro Series Hair Clippers",
-      lv: "Pro Sērijas Matu Griežamās Mašīnītes",
-      ru: "Профессиональная машинка для стрижки"
+      en: "Disposable Face Shields",
+      lv: "Vienreizlietojamie sejas aizsargi",
+      ru: "Одноразовые защитные маски для лица"
     },
     description: {
-      en: "Heavy-duty magnetic motor clippers designed for professional barbers.",
-      lv: "Izturīgas matu griežamās mašīnītes ar magnētisko motoru, paredzētas profesionāliem frizieriem.",
-      ru: "Мощная машинка с магнитным мотором для профессиональных барберов."
+      en: "Protects the client's face, eyes, and skin during haircuts and coloring. Prevents contact with hair, chemicals, and liquids.",
+      lv: "Aizsargā klienta seju, acis un ādu matu griešanas un krāsošanas laikā. Novērš saskari ar matiem, ķīmiskām vielām un šķidrumiem.",
+      ru: "Защищает лицо, глаза и кожу клиента во время стрижки и окрашивания. Предотвращает контакт с волосами, химикатами и жидкостями."
     },
-    samplePrice: 85.00,
-    wholesale5to10: 75.00,
-    wholesale10plus: 65.00
+    samplePrice: 12.00,
+    wholesale5to10: 10.00,
+    wholesale10plus: 8.00,
+    unit: {
+      en: "pack of 50",
+      lv: "iepakojums (50 gab.)",
+      ru: "упаковка (50 шт.)"
+    }
   },
   {
     id: "prod-2",
