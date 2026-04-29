@@ -36,14 +36,23 @@ export function ProductCard({ product }: { product: Product }) {
             <span className="text-muted-foreground">{t("samplePrice")}</span>
             <span className="font-medium">€{product.samplePrice.toFixed(2)} <span className="text-muted-foreground font-normal text-xs">/ {unitLabel}</span></span>
           </div>
-          <div className="flex justify-between items-center text-sm border-b border-border pb-2">
-            <span className="text-muted-foreground">{t("wholesale5to10")}</span>
-            <span className="font-medium">€{product.wholesale5to10.toFixed(2)} <span className="text-muted-foreground font-normal text-xs">/ {unitLabel}</span></span>
-          </div>
-          <div className="flex justify-between items-center text-sm">
-            <span className="text-muted-foreground">{t("wholesale10plus")}</span>
-            <span className="font-medium">€{product.wholesale10plus.toFixed(2)} <span className="text-muted-foreground font-normal text-xs">/ {unitLabel}</span></span>
-          </div>
+          {product.wholesale10plus !== undefined ? (
+            <>
+              <div className="flex justify-between items-center text-sm border-b border-border pb-2">
+                <span className="text-muted-foreground">{t("wholesale5to10")}</span>
+                <span className="font-medium">€{product.wholesale5to10.toFixed(2)} <span className="text-muted-foreground font-normal text-xs">/ {unitLabel}</span></span>
+              </div>
+              <div className="flex justify-between items-center text-sm">
+                <span className="text-muted-foreground">{t("wholesale10plus")}</span>
+                <span className="font-medium">€{product.wholesale10plus.toFixed(2)} <span className="text-muted-foreground font-normal text-xs">/ {unitLabel}</span></span>
+              </div>
+            </>
+          ) : (
+            <div className="flex justify-between items-center text-sm">
+              <span className="text-muted-foreground">{t("wholesale5plus")}</span>
+              <span className="font-medium">€{product.wholesale5to10.toFixed(2)} <span className="text-muted-foreground font-normal text-xs">/ {unitLabel}</span></span>
+            </div>
+          )}
         </div>
 
         <a 

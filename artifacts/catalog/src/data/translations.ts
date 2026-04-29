@@ -14,6 +14,7 @@ export type Translations = {
   samplePrice: LocalizedString;
   wholesale5to10: LocalizedString;
   wholesale10plus: LocalizedString;
+  wholesale5plus: LocalizedString;
   contactBtn: LocalizedString;
   contactHelper: LocalizedString;
   footerText: LocalizedString;
@@ -65,6 +66,11 @@ export const translations: Translations = {
     en: "Wholesale 10+ pcs",
     lv: "Vairumā 10+ gab",
     ru: "Оптом 10+ шт"
+  },
+  wholesale5plus: {
+    en: "Wholesale 5+ pcs",
+    lv: "Vairumā 5+ gab",
+    ru: "Оптом 5+ шт"
   },
   contactBtn: {
     en: "Contact to Order",

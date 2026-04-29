@@ -9,7 +9,7 @@ export type Product = {
   description: LocalizedString;
   samplePrice: number;
   wholesale5to10: number;
-  wholesale10plus: number;
+  wholesale10plus?: number;
   unit?: LocalizedString;
 };
 
@@ -46,22 +46,25 @@ export const products: Product[] = [
   },
   {
     id: "prod-2",
-    mediaType: "video",
-    mediaUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
-    posterUrl: "/images/product-scissors.png",
+    mediaType: "image",
+    mediaUrl: "/images/product-scarves.png",
     name: {
-      en: "Japanese Steel Scissors 6\"",
-      lv: "Japāņu Tērauda Šķēres 6\"",
-      ru: "Японские стальные ножницы 6\""
+      en: "Hair-cutting Scarves",
+      lv: "Matu griešanas apkakles",
+      ru: "Воротнички для стрижки волос"
     },
     description: {
-      en: "Hand-honed barber scissors providing smooth and precise cuts.",
-      lv: "Roku darba frizieru šķēres, kas nodrošina gludu un precīzu griezumu.",
-      ru: "Ножницы ручной заточки, обеспечивающие плавный и точный срез."
+      en: "Covers and protects the client's clothing during haircuts and styling. Prevents hair and moisture from getting on clothes.",
+      lv: "Pārklāj un aizsargā klienta apģērbu matu griešanas un veidošanas laikā. Novērš matu un mitruma nokļūšanu uz drēbēm.",
+      ru: "Покрывает и защищает одежду клиента во время стрижки и укладки. Предотвращает попадание волос и влаги на одежду."
     },
-    samplePrice: 120.00,
-    wholesale5to10: 100.00,
-    wholesale10plus: 90.00
+    samplePrice: 2.00,
+    wholesale5to10: 1.50,
+    unit: {
+      en: "roll",
+      lv: "rullis",
+      ru: "рулон"
+    }
   },
   {
     id: "prod-3",
