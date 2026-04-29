@@ -25,12 +25,6 @@ export function Contact() {
             </a>
           </div>
         </div>
-
-        <div className="mt-16">
-          <a href="#" className="inline-block text-sm uppercase tracking-widest font-medium hover:text-muted-foreground transition-colors underline underline-offset-4">
-            Instagram
-          </a>
-        </div>
       </div>
     </section>
   );
