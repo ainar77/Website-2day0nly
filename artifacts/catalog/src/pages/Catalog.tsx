@@ -4,6 +4,7 @@ import { ProductGrid } from "@/components/ProductGrid";
 import { ProductRequest } from "@/components/ProductRequest";
 import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
+import { SuggestBubble } from "@/components/SuggestBubble";
 
 export default function CatalogPage() {
   return (
@@ -16,6 +17,7 @@ export default function CatalogPage() {
         <Contact />
       </main>
       <Footer />
+      <SuggestBubble />
     </div>
   );
 }

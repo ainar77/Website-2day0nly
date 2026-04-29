@@ -20,6 +20,9 @@ export type Translations = {
   footerText: LocalizedString;
   piece: LocalizedString;
   requestMessage: LocalizedString;
+  suggestBtn: LocalizedString;
+  modalOpenCatalog: LocalizedString;
+  modalClose: LocalizedString;
 };
 
 export const translations: Translations = {
@@ -97,5 +100,20 @@ export const translations: Translations = {
     en: "We are always working on finding useful and interesting products for you. If you have any product requests or suggestions, feel free to contact us — we would be happy to hear from you.",
     lv: "Mēs nepārtraukti strādājam, lai atrastu Jums noderīgus un interesantus produktus. Ja Jums ir kādi produktu pieprasījumi vai ieteikumi, droši sazinieties ar mums — mēs labprāt Jūs uzklausīsim.",
     ru: "Мы постоянно работаем над тем, чтобы находить для вас полезные и интересные товары. Если у вас есть пожелания или предложения по продуктам, свяжитесь с нами — мы будем рады вас услышать."
+  },
+  suggestBtn: {
+    en: "Suggest a product",
+    lv: "Ieteikt produktu",
+    ru: "Предложить товар"
+  },
+  modalOpenCatalog: {
+    en: "Open Catalog",
+    lv: "Atvērt katalogu",
+    ru: "Открыть каталог"
+  },
+  modalClose: {
+    en: "Close",
+    lv: "Aizvērt",
+    ru: "Закрыть"
   }
 };
