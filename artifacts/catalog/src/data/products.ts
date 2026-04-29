@@ -11,6 +11,7 @@ export type Product = {
   wholesale5to10: number;
   wholesale10plus?: number;
   unit?: LocalizedString;
+  wholesaleLabel?: LocalizedString;
 };
 
 /*
@@ -69,20 +70,29 @@ export const products: Product[] = [
   {
     id: "prod-3",
     mediaType: "image",
-    mediaUrl: "/images/product-pomade.png",
+    mediaUrl: "/images/product-foil.png",
     name: {
-      en: "Matte Finish Styling Pomade",
-      lv: "Matētas Apdares Veidošanas Pomāde",
-      ru: "Матовая помада для укладки"
+      en: "Aluminium Foil",
+      lv: "Alumīnija folija",
+      ru: "Алюминиевая фольга"
     },
     description: {
-      en: "Water-based pomade offering a firm hold with a natural matte finish.",
-      lv: "Uz ūdens bāzes veidota pomāde, kas piedāvā stingru fiksāciju ar dabisku matētu apdari.",
-      ru: "Помада на водной основе, обеспечивающая сильную фиксацию с естественным матовым финишем."
+      en: "Used for hair coloring and highlighting techniques. Separates hair sections and retains heat for better color processing.",
+      lv: "Izmanto matu krāsošanas un izgaismošanas tehnikām. Atdala matu šķipsnas un saglabā siltumu labākai krāsas iedarbībai.",
+      ru: "Используется для окрашивания и мелирования волос. Разделяет пряди и удерживает тепло для лучшего проявления цвета."
     },
-    samplePrice: 15.00,
-    wholesale5to10: 12.00,
-    wholesale10plus: 9.50
+    samplePrice: 10.00,
+    wholesale5to10: 8.00,
+    unit: {
+      en: "roll",
+      lv: "rullis",
+      ru: "рулон"
+    },
+    wholesaleLabel: {
+      en: "Wholesale 4+ pcs",
+      lv: "Vairumā 4+ gab",
+      ru: "Оптом 4+ шт"
+    }
   },
   {
     id: "prod-4",

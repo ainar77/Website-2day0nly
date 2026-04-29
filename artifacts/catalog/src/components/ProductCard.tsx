@@ -49,7 +49,7 @@ export function ProductCard({ product }: { product: Product }) {
             </>
           ) : (
             <div className="flex justify-between items-center text-sm">
-              <span className="text-muted-foreground">{t("wholesale5plus")}</span>
+              <span className="text-muted-foreground">{product.wholesaleLabel ? tl(product.wholesaleLabel) : t("wholesale5plus")}</span>
               <span className="font-medium">€{product.wholesale5to10.toFixed(2)} <span className="text-muted-foreground font-normal text-xs">/ {unitLabel}</span></span>
             </div>
           )}
