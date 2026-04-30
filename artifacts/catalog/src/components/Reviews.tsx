@@ -36,6 +36,7 @@ export function Reviews() {
         <div className="mx-auto max-w-3xl">
           <div
             className="group relative w-full overflow-hidden rounded-xl border border-neutral-300 bg-neutral-100 shadow-sm cursor-pointer"
+            style={{ aspectRatio: "800 / 1280" }}
             onClick={handleToggle}
             role="button"
             tabIndex={0}
@@ -49,7 +50,7 @@ export function Reviews() {
           >
             <video
               ref={videoRef}
-              className="block w-full h-auto"
+              className="absolute inset-0 w-full h-full object-contain"
               autoPlay
               muted
               loop
