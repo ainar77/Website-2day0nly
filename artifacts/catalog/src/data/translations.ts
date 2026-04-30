@@ -24,6 +24,8 @@ export type Translations = {
   modalOpenCatalog: LocalizedString;
   modalContactUs: LocalizedString;
   modalClose: LocalizedString;
+  reviewsTitle: LocalizedString;
+  reviewsVideoTitle: LocalizedString;
 };
 
 export const translations: Translations = {
@@ -121,5 +123,15 @@ export const translations: Translations = {
     en: "Close",
     lv: "Aizvērt",
     ru: "Закрыть"
+  },
+  reviewsTitle: {
+    en: "Customer Reviews & Product Usage",
+    lv: "Klientu atsauksmes un produktu lietošana",
+    ru: "Отзывы клиентов и использование продукции"
+  },
+  reviewsVideoTitle: {
+    en: "Face masks in use of our clients",
+    lv: "Sejas aizsargi mūsu klientu lietojumā",
+    ru: "Защитные маски в использовании у наших клиентов"
   }
 };

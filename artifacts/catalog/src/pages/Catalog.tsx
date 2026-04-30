@@ -1,6 +1,7 @@
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { ProductGrid } from "@/components/ProductGrid";
+import { Reviews } from "@/components/Reviews";
 import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
 import { SuggestBubble } from "@/components/SuggestBubble";
@@ -12,6 +13,7 @@ export default function CatalogPage() {
       <main className="flex-grow">
         <Hero />
         <ProductGrid />
+        <Reviews />
         <Contact />
       </main>
       <Footer />
