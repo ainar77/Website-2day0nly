@@ -60,6 +60,6 @@ export const reviews: Review[] = [
   - Optionally set `reviewsVideo.poster` to a still image shown before play.
 */
 export const reviewsVideo = {
-  src: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+  src: "/videos/face-shields-in-use.mp4",
   poster: "/images/product-face-shields.png"
 };
