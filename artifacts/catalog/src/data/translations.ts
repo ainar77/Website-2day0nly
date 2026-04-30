@@ -22,6 +22,7 @@ export type Translations = {
   requestMessage: LocalizedString;
   suggestBtn: LocalizedString;
   modalOpenCatalog: LocalizedString;
+  modalContactUs: LocalizedString;
   modalClose: LocalizedString;
 };
 
@@ -110,6 +111,11 @@ export const translations: Translations = {
     en: "Open Catalog",
     lv: "Atvērt katalogu",
     ru: "Открыть каталог"
+  },
+  modalContactUs: {
+    en: "Contact us",
+    lv: "Sazināties",
+    ru: "Связаться"
   },
   modalClose: {
     en: "Close",

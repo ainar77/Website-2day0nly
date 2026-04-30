@@ -19,10 +19,10 @@ export function SuggestBubble() {
     setOpen(true);
   };
 
-  const handleOpenCatalog = () => {
+  const handleContactUs = () => {
     setOpen(false);
     setTimeout(() => {
-      const el = document.getElementById("products");
+      const el = document.getElementById("contact");
       if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
     }, 150);
   };
@@ -65,10 +65,10 @@ export function SuggestBubble() {
             </button>
             <button
               type="button"
-              onClick={handleOpenCatalog}
+              onClick={handleContactUs}
               className="inline-flex items-center justify-center h-10 px-5 rounded-full text-sm font-medium bg-white text-neutral-900 hover:bg-neutral-200 transition-colors duration-200"
             >
-              {t("modalOpenCatalog")}
+              {t("modalContactUs")}
             </button>
           </DialogFooter>
         </DialogContent>
