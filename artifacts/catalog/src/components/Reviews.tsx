@@ -27,9 +27,9 @@ export function Reviews() {
           {t("reviewsTitle")}
         </h2>
 
-        <div className="flex flex-col items-center mb-8">
-          <span className="h-px w-10 bg-foreground/40 mb-4" aria-hidden />
-          <h3 className="text-2xl md:text-3xl font-bold tracking-tight text-center text-foreground max-w-2xl">
+        <div className="flex flex-col items-center mb-6">
+          <span className="h-px w-8 bg-foreground/30 mb-3" aria-hidden />
+          <h3 className="text-lg md:text-xl font-medium tracking-tight text-center text-foreground/90 max-w-xl">
             {t("reviewsVideoTitle")}
           </h3>
         </div>
