@@ -130,8 +130,8 @@ export const translations: Translations = {
     ru: "Отзывы клиентов и использование продукции"
   },
   reviewsVideoTitle: {
-    en: "Face masks in use of our clients",
-    lv: "Sejas aizsargi mūsu klientu lietojumā",
-    ru: "Защитные маски в использовании у наших клиентов"
+    en: "Disposable Face Shields in use of our clients",
+    lv: "Vienreizlietojamie sejas aizsargi mūsu klientu lietojumā",
+    ru: "Одноразовые защитные маски для лица в использовании у наших клиентов"
   }
 };

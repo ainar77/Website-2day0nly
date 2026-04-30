@@ -27,9 +27,12 @@ export function Reviews() {
           {t("reviewsTitle")}
         </h2>
 
-        <h3 className="text-sm md:text-base uppercase tracking-widest text-muted-foreground text-center mb-5">
-          {t("reviewsVideoTitle")}
-        </h3>
+        <div className="flex flex-col items-center mb-8">
+          <span className="h-px w-10 bg-foreground/40 mb-4" aria-hidden />
+          <h3 className="text-2xl md:text-3xl font-bold tracking-tight text-center text-foreground max-w-2xl">
+            {t("reviewsVideoTitle")}
+          </h3>
+        </div>
         <div className="mx-auto max-w-3xl">
           <div
             className="group relative w-full overflow-hidden rounded-xl border border-neutral-300 bg-neutral-100 shadow-sm cursor-pointer"
