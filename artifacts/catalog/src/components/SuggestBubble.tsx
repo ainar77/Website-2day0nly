@@ -33,7 +33,7 @@ export function SuggestBubble() {
         <button
           type="button"
           onClick={handleOpen}
-          className={`${hasInteracted ? "" : "animate-suggest-soft-glow"} relative inline-flex items-center gap-2 rounded-full bg-white text-neutral-900 border border-neutral-800 px-4 py-2 md:px-5 md:py-2.5 text-sm md:text-base font-medium shadow-md shadow-black/10 hover:bg-neutral-900 hover:text-white hover:border-neutral-900 hover:shadow-lg transition-colors duration-200`}
+          className={`${hasInteracted ? "" : "animate-suggest-soft-glow"} relative inline-flex items-center gap-2 rounded-full bg-neutral-800 text-white border border-neutral-900 px-4 py-2 md:px-5 md:py-2.5 text-sm md:text-base font-medium shadow-md shadow-black/20 hover:bg-black hover:text-white hover:border-black hover:shadow-lg transition-colors duration-200`}
           aria-label={t("suggestBtn")}
         >
           <span className="inline-block h-2 w-2 rounded-full bg-current opacity-70" aria-hidden />
