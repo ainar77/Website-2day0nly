@@ -100,14 +100,14 @@ export const translations: Translations = {
     ru: "шт"
   },
   requestMessage: {
-    en: "We are always working on finding useful and interesting products for you. If you have any product requests or suggestions, feel free to contact us — we would be happy to hear from you.",
-    lv: "Mēs nepārtraukti strādājam, lai atrastu Jums noderīgus un interesantus produktus. Ja Jums ir kādi produktu pieprasījumi vai ieteikumi, droši sazinieties ar mums — mēs labprāt Jūs uzklausīsim.",
-    ru: "Мы постоянно работаем над тем, чтобы находить для вас полезные и интересные товары. Если у вас есть пожелания или предложения по продуктам, свяжитесь с нами — мы будем рады вас услышать."
+    en: "We continuously expand our product range and source new solutions for our clients.\nIf you have specific product requests, let us know — we will find the best available options at optimized pricing.",
+    lv: "Mēs nepārtraukti paplašinām savu produktu klāstu un meklējam jaunus risinājumus saviem klientiem.\nJa Jums ir konkrēti produktu pieprasījumi, dariet mums zināmu — mēs atradīsim labākos pieejamos variantus par optimizētām cenām.",
+    ru: "Мы постоянно расширяем ассортимент и находим новые решения для наших клиентов.\nЕсли у вас есть конкретные запросы на товары, сообщите нам — мы подберём лучшие доступные варианты по оптимальным ценам."
   },
   suggestBtn: {
-    en: "Suggest a product",
-    lv: "Ieteikt produktu",
-    ru: "Предложить товар"
+    en: "Request a Product",
+    lv: "Pieprasīt produktu",
+    ru: "Запросить товар"
   },
   modalOpenCatalog: {
     en: "Open Catalog",
