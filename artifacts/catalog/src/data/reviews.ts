@@ -60,6 +60,6 @@ export const reviews: Review[] = [
   - Optionally set `reviewsVideo.poster` to a still image shown before play.
 */
 export const reviewsVideo = {
-  src: "/videos/face-shields-in-use.mp4",
+  src: "/videos/face_masks_in_use.MP4",
   poster: "/images/product-face-shields.png"
 };
