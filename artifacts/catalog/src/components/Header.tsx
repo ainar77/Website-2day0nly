@@ -19,6 +19,9 @@ export function Header() {
           <a href="#products" className="text-muted-foreground hover:text-foreground transition-colors">
             {t("navProducts")}
           </a>
+          <a href="#reviews" className="text-muted-foreground hover:text-foreground transition-colors">
+            {t("navReviews")}
+          </a>
           <a href="#contact" className="text-muted-foreground hover:text-foreground transition-colors">
             {t("navContact")}
           </a>

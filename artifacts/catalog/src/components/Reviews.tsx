@@ -20,7 +20,7 @@ export function Reviews() {
   return (
     <section
       id="reviews"
-      className="py-16 md:py-24 px-4 bg-white border-t border-border"
+      className="scroll-mt-20 py-16 md:py-24 px-4 bg-white border-t border-border"
     >
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-center mb-12 md:mb-16">

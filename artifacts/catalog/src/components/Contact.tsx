@@ -4,7 +4,7 @@ export function Contact() {
   const { t } = useLanguage();
 
   return (
-    <section id="contact" className="py-24 px-4 bg-white border-t border-border">
+    <section id="contact" className="scroll-mt-20 py-24 px-4 bg-white border-t border-border">
       <div className="container mx-auto max-w-3xl text-center">
         <h2 className="text-3xl font-bold tracking-tight mb-4">{t("navContact")}</h2>
         <p className="text-muted-foreground mb-12 max-w-md mx-auto">

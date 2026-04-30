@@ -7,6 +7,7 @@ export type LocalizedString = {
 export type Translations = {
   headerSubtitle: LocalizedString;
   navProducts: LocalizedString;
+  navReviews: LocalizedString;
   navContact: LocalizedString;
   heroTitle: LocalizedString;
   heroSubtitle: LocalizedString;
@@ -38,6 +39,11 @@ export const translations: Translations = {
     en: "Products",
     lv: "Produkti",
     ru: "Товары"
+  },
+  navReviews: {
+    en: "Reviews",
+    lv: "Atsauksmes",
+    ru: "Отзывы"
   },
   navContact: {
     en: "Contact",
