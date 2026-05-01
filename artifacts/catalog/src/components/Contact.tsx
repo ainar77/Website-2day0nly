@@ -20,8 +20,8 @@ export function Contact() {
           </div>
           <div className="flex flex-col items-center">
             <span className="text-sm font-medium uppercase tracking-widest text-muted-foreground mb-2">Phone / WhatsApp</span>
-            <a href="tel:+37129594708" className="text-xl font-medium hover:text-muted-foreground transition-colors">
-              +371 29594708
+            <a href="tel:+37125784274" className="text-xl font-medium hover:text-muted-foreground transition-colors">
+              +371 25784274
             </a>
           </div>
         </div>
