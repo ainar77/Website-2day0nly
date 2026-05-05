@@ -1,9 +1,12 @@
+import { useState } from "react";
 import { useLanguage } from "@/lib/i18n";
 import { Product } from "@/data/products";
+import { ContactModal } from "./ContactModal";
 
 export function ProductCard({ product }: { product: Product }) {
   const { t, tl } = useLanguage();
   const unitLabel = product.unit ? tl(product.unit) : t("piece");
+  const [modalOpen, setModalOpen] = useState(false);
 
   return (
     <div className="group flex flex-col border border-border bg-card transition-all duration-300 hover:border-foreground/30 hover:shadow-xl">
@@ -55,12 +58,15 @@ export function ProductCard({ product }: { product: Product }) {
           )}
         </div>
 
-        <a 
-          href="#contact"
+        <button
+          type="button"
+          onClick={() => setModalOpen(true)}
           className="w-full inline-flex items-center justify-center h-10 text-sm font-medium border border-border bg-transparent text-foreground hover:bg-muted transition-colors duration-200"
         >
           {t("contactBtn")}
-        </a>
+        </button>
+
+        <ContactModal open={modalOpen} onClose={() => setModalOpen(false)} />
       </div>
     </div>
   );

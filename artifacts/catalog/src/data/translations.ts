@@ -17,6 +17,9 @@ export type Translations = {
   wholesale10plus: LocalizedString;
   wholesale5plus: LocalizedString;
   contactBtn: LocalizedString;
+  contactModalTitle: LocalizedString;
+  contactModalEmail: LocalizedString;
+  contactModalWhatsApp: LocalizedString;
   contactHelper: LocalizedString;
   footerText: LocalizedString;
   piece: LocalizedString;
@@ -89,6 +92,21 @@ export const translations: Translations = {
     en: "Contact to Order",
     lv: "Sazināties, lai pasūtītu",
     ru: "Связаться для заказа"
+  },
+  contactModalTitle: {
+    en: "Contact Us to Order",
+    lv: "Sazināties, lai pasūtītu",
+    ru: "Свяжитесь с нами для заказа"
+  },
+  contactModalEmail: {
+    en: "Email",
+    lv: "E-pasts",
+    ru: "Эл. почта"
+  },
+  contactModalWhatsApp: {
+    en: "WhatsApp",
+    lv: "WhatsApp",
+    ru: "WhatsApp"
   },
   contactHelper: {
     en: "For orders and wholesale inquiries, please contact us.",
