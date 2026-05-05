@@ -1,13 +1,6 @@
 import { useState } from "react";
 import { useLanguage } from "@/lib/i18n";
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogFooter,
-  DialogHeader,
-  DialogTitle,
-} from "@/components/ui/dialog";
+import { ContactModal } from "./ContactModal";
 
 export function SuggestBubble() {
   const { t } = useLanguage();
@@ -17,14 +10,6 @@ export function SuggestBubble() {
   const handleOpen = () => {
     setHasInteracted(true);
     setOpen(true);
-  };
-
-  const handleContactUs = () => {
-    setOpen(false);
-    setTimeout(() => {
-      const el = document.getElementById("contact");
-      if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
-    }, 150);
   };
 
   return (
@@ -41,34 +26,12 @@ export function SuggestBubble() {
         </button>
       </div>
 
-      <Dialog open={open} onOpenChange={setOpen}>
-        <DialogContent className="bg-neutral-900 text-neutral-100 border border-neutral-700 rounded-2xl shadow-2xl max-w-lg">
-          <DialogHeader>
-            <DialogTitle className="text-white text-xl tracking-tight">
-              {t("suggestBtn")}
-            </DialogTitle>
-            <DialogDescription className="text-neutral-300 leading-relaxed pt-2 text-base whitespace-pre-line">
-              {t("requestMessage")}
-            </DialogDescription>
-          </DialogHeader>
-          <DialogFooter className="mt-4 gap-2 sm:gap-2">
-            <button
-              type="button"
-              onClick={() => setOpen(false)}
-              className="inline-flex items-center justify-center h-10 px-5 rounded-full text-sm font-medium border border-neutral-600 bg-transparent text-neutral-200 hover:bg-neutral-800 hover:border-neutral-400 transition-colors duration-200"
-            >
-              {t("modalClose")}
-            </button>
-            <button
-              type="button"
-              onClick={handleContactUs}
-              className="inline-flex items-center justify-center h-10 px-5 rounded-full text-sm font-medium bg-white text-neutral-900 hover:bg-neutral-200 transition-colors duration-200"
-            >
-              {t("modalContactUs")}
-            </button>
-          </DialogFooter>
-        </DialogContent>
-      </Dialog>
+      <ContactModal
+        open={open}
+        onClose={() => setOpen(false)}
+        title={t("suggestBtn")}
+        description={t("requestMessage")}
+      />
     </>
   );
 }

@@ -9,9 +9,11 @@ import {
 interface ContactModalProps {
   open: boolean;
   onClose: () => void;
+  title?: string;
+  description?: string;
 }
 
-export function ContactModal({ open, onClose }: ContactModalProps) {
+export function ContactModal({ open, onClose, title, description }: ContactModalProps) {
   const { t } = useLanguage();
 
   return (
@@ -19,11 +21,17 @@ export function ContactModal({ open, onClose }: ContactModalProps) {
       <DialogContent className="bg-neutral-900 text-neutral-100 border border-neutral-700 rounded-2xl shadow-2xl max-w-sm">
         <DialogHeader>
           <DialogTitle className="text-white text-xl tracking-tight text-center">
-            {t("contactModalTitle")}
+            {title ?? t("contactModalTitle")}
           </DialogTitle>
         </DialogHeader>
 
-        <div className="flex flex-row justify-center gap-8 pt-4 pb-2">
+        {description && (
+          <p className="text-neutral-300 text-sm leading-relaxed text-center whitespace-pre-line -mt-1">
+            {description}
+          </p>
+        )}
+
+        <div className="flex flex-row justify-center gap-8 pt-2 pb-2">
           <a
             href="mailto:2day0nly26@gmail.com"
             className="group flex flex-col items-center gap-3"
