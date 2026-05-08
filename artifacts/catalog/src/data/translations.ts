@@ -54,14 +54,14 @@ export const translations: Translations = {
     ru: "Контакты"
   },
   heroTitle: {
-    en: "Catalog",
-    lv: "Katalogs",
-    ru: "Каталог"
+    en: "Affordable Hair Salon Supplies",
+    lv: "Pieejami frizieru salonu piederumi",
+    ru: "Доступные расходники для салонов красоты"
   },
   heroSubtitle: {
-    en: "Browse our available products, sample prices and wholesale offers.",
-    lv: "Apskatiet pieejamos produktus, paraugu cenas un vairumtirdzniecības piedāvājumus.",
-    ru: "Ознакомьтесь с доступными товарами, ценами на образцы и оптовыми предложениями."
+    en: "Better prices. Fast delivery. Reliable quality.",
+    lv: "Labākas cenas. Ātra piegāde. Uzticama kvalitāte.",
+    ru: "Лучшие цены. Быстрая доставка. Надёжное качество."
   },
   heroBtn: {
     en: "View Products",
