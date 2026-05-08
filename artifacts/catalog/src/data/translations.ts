@@ -8,7 +8,9 @@ export type Translations = {
   headerSubtitle: LocalizedString;
   navProducts: LocalizedString;
   navReviews: LocalizedString;
+  navAbout: LocalizedString;
   navContact: LocalizedString;
+  aboutTitle: LocalizedString;
   heroTitle: LocalizedString;
   heroSubtitle: LocalizedString;
   heroBtn: LocalizedString;
@@ -47,6 +49,16 @@ export const translations: Translations = {
     en: "Reviews",
     lv: "Atsauksmes",
     ru: "Отзывы"
+  },
+  navAbout: {
+    en: "About Us",
+    lv: "Par mums",
+    ru: "О нас"
+  },
+  aboutTitle: {
+    en: "Why salons choose us?",
+    lv: "Kāpēc saloni izvēlas mūs?",
+    ru: "Почему салоны выбирают нас?"
   },
   navContact: {
     en: "Contact",

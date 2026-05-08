@@ -2,6 +2,7 @@ import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { ProductGrid } from "@/components/ProductGrid";
 import { Reviews } from "@/components/Reviews";
+import { AboutUs } from "@/components/AboutUs";
 import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
 import { SuggestBubble } from "@/components/SuggestBubble";
@@ -14,6 +15,7 @@ export default function CatalogPage() {
         <Hero />
         <ProductGrid />
         <Reviews />
+        <AboutUs />
         <Contact />
       </main>
       <Footer />
