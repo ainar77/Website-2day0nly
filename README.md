@@ -4,9 +4,9 @@ A modern and responsive product catalog website built with React and TypeScript.
 
 The project focuses on a clean user interface, smooth animations, responsive design, and a simple browsing experience across desktop and mobile devices.
 
-## 🌐 Live Demo
+## 🌍 Live Demo
 
-🌍 **[View the live website](https://2day0nly.pages.dev)**
+Link: **[View the live website](https://2day0nly.pages.dev)**
 
 ## 📚 About the Project
 
