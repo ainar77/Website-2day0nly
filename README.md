@@ -1,4 +1,4 @@
-# Product Catalog Hub
+# Product Catalog Hub (2day0nly)
 
 A modern and responsive product catalog website built with React and TypeScript.
 
