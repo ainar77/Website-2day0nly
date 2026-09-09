@@ -8,6 +8,12 @@ The project focuses on a clean user interface, smooth animations, responsive des
 
 🌍 **[View the live website](https://2day0nly.pages.dev)**
 
+## 📚 About the Project
+
+This project was created as part of my practical web development experience.
+
+The goal was not only to build the website itself, but also to practice a complete development and deployment workflow — from working with React and TypeScript to version control, production builds, and cloud deployment.
+
 ## ✨ Features
 
 - Modern and minimal UI
@@ -34,9 +40,3 @@ The project is deployed using Cloudflare Pages with automatic deployments from t
 The workflow is:
 
 `Development → Git → GitHub → Cloudflare Pages → Production`
-
-## 📚 About the Project
-
-This project was created as part of my practical web development experience.
-
-The goal was not only to build the website itself, but also to practice a complete development and deployment workflow — from working with React and TypeScript to version control, production builds, and cloud deployment.
